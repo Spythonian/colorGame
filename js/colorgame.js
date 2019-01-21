@@ -39,6 +39,9 @@ hardBtn.addEventListener("click", function(){
 })
 
 resetButton.addEventListener("click", function(){
+    resetButton.textContent = "New Colors";
+    // change message display to empty
+    messageDisplay.textContent = "";
     // generate all new colors
     colors = generateRandomColors(numSquares);
     // pick new random color from array
